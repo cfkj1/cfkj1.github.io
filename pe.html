@@ -2,165 +2,82 @@
 <head>
 <title>CFPE:纯净，丰富，可扩展</title>
 <link href="/images/pelogo.ico" rel="shortcut icon">
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<!-- stylesheet -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //stylesheet -->
+<!-- font-awesome-icons -->
+<link href="css/font-awesome.css" type="text/css" rel="stylesheet"> 
+<!-- //font-awesome-icons -->
+</head>
 <body>
-  
+<div class="agileits_main">
+<!-- header -->
+<div class="w3_agile_logo">
+	<h1 class="text-center"><a href="pehome.html">CFPE</a></h1>
+	<h1 class="text-center"><a href="">内测进行中！</a></h1>
+</div>
+<!-- banner -->
+<div class="w3_banner">
+	<div class="container">
+		<div class="slider">
+			<div class="callbacks_container">
+			   <ul class="rslides callbacks callbacks1" id="slider4">
+				</ul>
+			</div>
+		  <script src="js/responsiveslides.min.js"></script>
+		  <script>
+			// You can also use "$(window).load(function() {"
+			$(function () {
+			  // Slideshow 4
+			  $("#slider4").responsiveSlides({
+				auto: true,
+				pager:true,
+				nav:true,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+				  $('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+				  $('.events').append("<li>after event fired.</li>");
+				}
+			  });
+		
+			});
+		 </script>
+	   </div>
+	</div>   
+</div>
+<!-- menu -->
+<nav class="navbar navbar-inverse ">
 
-  <header>
-    
-
-<div class="header-inner" style="height: 50vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>HotPE工具箱</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                
-                首页
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/donation">
-                
-                捐赠
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" target="_blank" rel="noopener" href="https://docs.hotpe.top/">
-                
-                文档
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/download/">
-                
-                下载
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" target="_blank" rel="noopener" href="https://github.com/VirtualHotBar/HotPEToolBox">
-                
-                GitHub
-              </a>
-            </li>
-          
-        
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+	<div class="collapse navbar-collapse top-nav w3l" id="bs-example-navbar-collapse-2">
+		<ul class="nav navbar-nav linkEffects linkHoverEffect_11 custom-menu">
+			<li class="agile_active"><a href="/pehome.html" class="scroll"><span>主页</span></a></li>
+			<li><a href="/pedownload.html" class="scroll"><span>下载</span></a></li>
+			<li><a href="/peabout.html" class="scroll"><span>关于</span></a></li>
+			<li><a href="/index.html" class="scroll"><span>作者网站</span></a></li>
+			
+		</ul>
+	</div>
+	</div>
 </nav>
-
-  
-
-<div id="banner" class="banner" parallax=true
-     style="background: url('/API/RandomPic/HotPE') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle">一个纯净、强大、优雅的PE工具箱</span>
-          
-        </div>
-
-        
-      </div>
-
-      
-    </div>
-  </div>
-</div>
-
-</div>
-
-  </header>
-
-  <main>
-    
-      <div class="container nopadding-x-md">
-        <div id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<article class="page-content">
-  <style>
-        div.gback {
-            margin: 0;
-            padding: 0;
-            font-family: "montserrat";
-            background-image: linear-gradient(125deg, #00A2E8, #597DFC, #1296DB, #B28BC2, #0080FF);
-            background-size: 400%;
-            animation: bganimation 15s infinite;
-        }
-
-        @keyframes bganimation {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-</style>
-	   
-	  
-    
+<!-- //menu -->
+  </div>	
+<!-- //banner -->	
+<!-- home -->
+<div class="home_ w3layouts">
+ <div class="home_grids_w3">
+  <div class="home_main">
     
     
     
